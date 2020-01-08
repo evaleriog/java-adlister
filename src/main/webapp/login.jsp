@@ -33,6 +33,7 @@
     <c:choose>
         <c:when test="${username.equals('admin')}">
             <c:set var="isAdmin" value="true"/>
+
         </c:when>
         <c:otherwise>
             <c:set var="isAdmin" value="false"/>
