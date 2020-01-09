@@ -10,7 +10,9 @@
 
     <div class="container">
         <h1>Viewing your profile.</h1>
+        <p>How are you doing ${username}</p>
     </div>
 
 </body>
 </html>
+
