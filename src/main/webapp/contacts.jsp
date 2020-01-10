@@ -12,7 +12,7 @@
 
         <div class="card-deck">
             <c:forEach var="contact" items="${contacts}">
-                <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                <div class="card text-white bg-secondary mb-3" style="min-width: 18rem; max-width: 18rem;">
                     <div class="card-header">${contact.firstName} ${contact.lastName}</div>
                     <div class="card-body">
                         <p class="card-text">${contact.phone}</p>

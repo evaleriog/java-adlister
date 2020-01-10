@@ -8,27 +8,26 @@
 </head>
 <body>
     <h1>Add Contact</h1>
-
+    <p>${message}</p>
     <form method="POST" action="/add-contact">
         <div class="form-group">
             <label>First Name: </label>
-            <input id="firstName" name ="firstName" class="form-control">
+            <input id="firstName" name ="firstName" class="form-control" value=${enterFirst}>
+            <small class="form-text text-muted badge badge-pill badge-warning">${firstMessage}</small>
         </div>
         <div class="form-group">
             <label>Last Name: </label>
-            <input id="lastName" name="lastName" class="form-control">
+            <input id="lastName" name="lastName" class="form-control" value=${enterLast}>
+            <small class="form-text text-muted badge badge-pill badge-warning">${lastMessage}</small>
         </div>
         <div class="form-grup">
             <label>Phone: </label>
-            <input id="phone" name="phone" class="form-control">
+            <input id="phone" name="phone" class="form-control" value=${enterPhone}>
+            <small class="form-text text-muted badge badge-pill badge-warning">${phoneMessage}</small>
         </div>
 
         <input type="submit" id="submit" name="submit" value="Submit" class="btn btn-primary">
     </form>
-    <div>
-        <h3>${first} ${last}</h3>
-        <p>${phone}</p>
-    </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
