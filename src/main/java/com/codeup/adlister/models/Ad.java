@@ -50,4 +50,9 @@ public class Ad {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    @Override
+    public String toString(){
+        return "{id: " + this.id + ", user_id: " + this.userId + ", title: " + this.title + ", description: " + this.description + "}";
+    }
 }
